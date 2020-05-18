@@ -13,12 +13,11 @@ Refer [Lunapay API Documentation](https://docs.lunapay.com/) for more details. H
 
 ## Getting Started
 ### Requesting Tokens
-
+Fill up this credential, on ```sdk\Lunapay.php``` line 38-40
 ```php
-	$this->current_url ='https://sandbox.lunapay.com';  //change to https://app.lunapay.com for production
-	$this->client_id = ''; 
-	$this->lunakey = '';
-	$this->luna_signature_key = '';
+$this->client_id = 'your-client-id'; 
+$this->lunakey = 'your-lunakey';
+$this->luna_signature_key = 'your-signature-key';
 
 ``` 
 
