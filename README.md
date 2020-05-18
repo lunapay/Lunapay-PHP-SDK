@@ -32,7 +32,7 @@ $lunapay->email = 'customer-email';
 $lunapay->name = 'customer-name'; 
 ```
 
-Specify the **redirect_url** if you want to redirect to your site after payment complete, leave it blank will display and stop at lunapay payment receipt.
+Specify the **redirect_url** if you want to redirect to your site after payment complete, leave it blank will display and stop at Lunapay payment receipt.
 ```php
 $lunapay->redirect_url = 'payment-redirect-url'; 
 ```
@@ -42,7 +42,7 @@ Specify the **cancel_url** if you want to have cancel indicator at payment page
 $lunapay->cancel_url = 'payment-cancel-url'; 
 ```
 
-Specify the **group_id** if you want generate payment link on specific group. You can create new group at lunapay dashboard, leave it blank will automatically added to default group.
+Specify the **group_id** if you want generate payment link on specific group. You can create new group at Lunapay dashboard, leave it blank will automatically added to default group.
 ```php
 $lunapay->group_id = 'payment-group-id'; 
 ```
