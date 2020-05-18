@@ -24,21 +24,32 @@ $this->luna_signature_key = 'your-signature-key';
 ### Send Payment 
 ***You required to configure the following code at ```payment.php``` to send payment.***
 ```php
-$lunapay->amount = 'your-payment-amount'; 
-$lunapay->reference_no = 'your-reference-no'; 
-$lunapay->item = 'your-item'; 
-$lunapay->callback_url = 'your-callback-url'; 
-$lunapay->email = 'your-email'; 
-$lunapay->name = 'your-name'; 
+$lunapay->amount = 'payment-amount'; 
+$lunapay->reference_no = 'payment-reference-no'; 
+$lunapay->item = 'payment-item'; 
+$lunapay->callback_url = 'payment-callback-url'; 
+$lunapay->email = 'customer-email'; 
+$lunapay->name = 'customer-name'; 
 ```
 
 Specify the **redirect_url** if you want to redirect to your site after payment complete, only receipt will display if **redirect_url** is not present after payment complete
 ```php
-$lunapay->redirect_url = 'your-redirect-url'; 
+$lunapay->redirect_url = 'payment-redirect-url'; 
 ```
 
 Specify the **cancel_url** if you want to have cancel indicator at payment page
 ```php
-$lunapay->redirect_url = 'your-redirect-url'; 
+$lunapay->cancel_url = 'payment-cancel-url'; 
 ```
 
+Specify the **group_id** if you want generate payment link on specific group. You can create new group id at lunapay dashboard, leave it blank will automatically added the payment link to default group.
+```php
+$lunapay->group_id = 'payment-group-id'; 
+```
+
+Specify all of this to added more information when send payment
+```php
+$lunapay->quantity = 'payment-item-quantity';
+$lunapay->description = 'payment-item-description';
+$lunapay->phone = 'customer-phone';
+```
