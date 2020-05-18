@@ -22,7 +22,7 @@ $this->luna_signature_key = 'your-signature-key';
 ``` 
 
 ### Send Payment 
-***You required to configure the following code at ```payment.php``` to send payment.***
+***You required to configure the following code at*** ```payment.php``` ***to send payment.***
 ```php
 $lunapay->amount = 'payment-amount'; 
 $lunapay->reference_no = 'payment-reference-no'; 
