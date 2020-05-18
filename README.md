@@ -21,3 +21,24 @@ $this->luna_signature_key = 'your-signature-key';
 
 ``` 
 
+### Send Payment 
+***You required to configure the following code at ```payment.php``` to send payment.***
+```php
+$lunapay->amount = 'your-payment-amount'; 
+$lunapay->reference_no = 'your-reference-no'; 
+$lunapay->item = 'your-item'; 
+$lunapay->callback_url = 'your-callback-url'; 
+$lunapay->email = 'your-email'; 
+$lunapay->name = 'your-name'; 
+```
+
+***Specify the redirect_url if you want to redirect to your site after payment complete, only receipt will display if redirect_url is not present after payment complete***
+```php
+$lunapay->redirect_url = 'your-redirect-url'; 
+```
+
+***Specify the cancel url if you want to have cancel indicator at payment page***
+```php
+$lunapay->redirect_url = 'your-redirect-url'; 
+```
+
