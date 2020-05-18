@@ -10,3 +10,15 @@ Refer [Lunapay API Documentation](https://docs.lunapay.com/) for more details. H
 * [Payment Callback Notification](https://docs.lunapay.com/doc/payment/callback)
 * [Payment Status](https://docs.lunapay.com/doc/paymentstatus)
 * [Get Payment Group Data](https://docs.lunapay.com/doc/paymentGroup/data)
+
+## Getting Started
+### Requesting Tokens
+
+```php
+	$this->current_url ='https://sandbox.lunapay.com';  //change to https://app.lunapay.com for production
+	$this->client_id = ''; 
+	$this->lunakey = '';
+	$this->luna_signature_key = '';
+
+``` 
+
