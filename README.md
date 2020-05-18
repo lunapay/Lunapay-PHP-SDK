@@ -32,7 +32,7 @@ $lunapay->email = 'customer-email';
 $lunapay->name = 'customer-name'; 
 ```
 
-Specify the **redirect_url** if you want to redirect to your site after payment complete, only receipt will display if **redirect_url** is not present after payment complete
+Specify the **redirect_url** if you want to redirect to your site after payment complete, leave it blank will display lunapay payment receipt.
 ```php
 $lunapay->redirect_url = 'payment-redirect-url'; 
 ```
