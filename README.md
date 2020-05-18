@@ -42,7 +42,7 @@ Specify the **cancel_url** if you want to have cancel indicator at payment page
 $lunapay->cancel_url = 'payment-cancel-url'; 
 ```
 
-Specify the **group_id** if you want generate payment link on specific group. You can create new group id at lunapay dashboard, leave it blank will automatically added the payment link to default group.
+Specify the **group_id** if you want generate payment link on specific group. You can create new group at lunapay dashboard, leave it blank will automatically added to default group.
 ```php
 $lunapay->group_id = 'payment-group-id'; 
 ```
